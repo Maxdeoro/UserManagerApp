@@ -4,7 +4,7 @@ const initialState = {
     error: null,
 };
 
-function userListReducer(state=initialState, action) {
+export function userListReducer(state=initialState, action) {
     switch(action.type) {
         case 'userList/addUser': {
             return {...state, users: [...state.users, action.payload]};
